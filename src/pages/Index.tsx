@@ -146,10 +146,10 @@ export default function Index() {
       {/* HERO */}
       <section id="hero" className="relative min-h-screen flex items-center pt-28 pb-16">
         <div
-          className="absolute inset-0 -z-10 bg-cover bg-center opacity-60"
+          className="absolute inset-0 -z-10 bg-cover bg-center opacity-20"
           style={{ backgroundImage: `url(${HERO_BG})` }}
         />
-        <div className="absolute inset-0 -z-10 bg-gradient-to-b from-background/40 via-background/70 to-background" />
+        <div className="absolute inset-0 -z-10 bg-gradient-to-b from-background/70 via-background/85 to-background" />
 
         <div className="container relative">
           <div className="max-w-3xl">
@@ -187,7 +187,7 @@ export default function Index() {
                 asChild
                 size="lg"
                 variant="outline"
-                className="rounded-xl h-14 px-8 text-base border-white/15 bg-white/5 hover:bg-white/10"
+                className="rounded-xl h-14 px-8 text-base border-primary/20 text-primary bg-white hover:bg-muted"
               >
                 <a href="#services">Наши услуги</a>
               </Button>
@@ -294,7 +294,7 @@ export default function Index() {
           <div className="grid md:grid-cols-3 gap-6">
             {reviews.map((r) => (
               <div key={r.name} className="glass rounded-3xl p-8 hover-lift">
-                <div className="flex gap-1 mb-5 text-secondary">
+                <div className="flex gap-1 mb-5 text-amber-500">
                   {Array.from({ length: 5 }).map((_, i) => (
                     <Icon key={i} name="Star" size={18} className="fill-current" />
                   ))}
@@ -345,7 +345,7 @@ export default function Index() {
                   value={form.name}
                   onChange={(e) => setForm({ ...form, name: e.target.value })}
                   placeholder="Как к вам обращаться"
-                  className="bg-white/5 border-white/10 h-12 rounded-xl"
+                  className="bg-muted/50 border-border h-12 rounded-xl"
                 />
               </div>
               <div>
@@ -356,7 +356,7 @@ export default function Index() {
                   value={form.phone}
                   onChange={(e) => setForm({ ...form, phone: e.target.value })}
                   placeholder="+7 (___) ___-__-__"
-                  className="bg-white/5 border-white/10 h-12 rounded-xl"
+                  className="bg-muted/50 border-border h-12 rounded-xl"
                 />
               </div>
               <div>
@@ -365,7 +365,7 @@ export default function Index() {
                   value={form.type}
                   onChange={(e) => setForm({ ...form, type: e.target.value })}
                   placeholder="Авто, квартира, здоровье…"
-                  className="bg-white/5 border-white/10 h-12 rounded-xl"
+                  className="bg-muted/50 border-border h-12 rounded-xl"
                 />
               </div>
               <div>
@@ -374,7 +374,7 @@ export default function Index() {
                   value={form.comment}
                   onChange={(e) => setForm({ ...form, comment: e.target.value })}
                   placeholder="Опишите вашу задачу"
-                  className="bg-white/5 border-white/10 rounded-xl min-h-24"
+                  className="bg-muted/50 border-border rounded-xl min-h-24"
                 />
               </div>
               <Button
@@ -421,7 +421,7 @@ export default function Index() {
       </section>
 
       {/* CONTACTS / FOOTER */}
-      <footer id="contacts" className="relative border-t border-white/5 pt-20 pb-10">
+      <footer id="contacts" className="relative border-t border-border bg-primary/[0.03] pt-20 pb-10">
         <div className="container">
           <div className="grid md:grid-cols-4 gap-10 mb-14">
             <div>
@@ -468,7 +468,7 @@ export default function Index() {
               </div>
             </div>
           </div>
-          <div className="border-t border-white/5 pt-6 text-center text-sm text-muted-foreground">
+          <div className="border-t border-border pt-6 text-center text-sm text-muted-foreground">
             © 2026 ПОЛИСПРО. Все права защищены.
           </div>
         </div>
