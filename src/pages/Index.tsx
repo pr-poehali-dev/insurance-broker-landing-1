@@ -146,7 +146,7 @@ export default function Index() {
       {/* HERO */}
       <section id="hero" className="relative min-h-screen flex items-center pt-28 pb-16">
         <div
-          className="absolute inset-0 -z-10 bg-cover bg-center opacity-20"
+          className="absolute inset-0 -z-10 bg-cover bg-center opacity-40"
           style={{ backgroundImage: `url(${HERO_BG})` }}
         />
         <div className="absolute inset-0 -z-10 bg-gradient-to-b from-background/70 via-background/85 to-background" />
@@ -187,7 +187,7 @@ export default function Index() {
                 asChild
                 size="lg"
                 variant="outline"
-                className="rounded-xl h-14 px-8 text-base border-primary/20 text-primary bg-white hover:bg-muted"
+                className="rounded-xl h-14 px-8 text-base border-primary/30 text-primary bg-transparent hover:bg-primary/10"
               >
                 <a href="#services">Наши услуги</a>
               </Button>
@@ -345,7 +345,7 @@ export default function Index() {
                   value={form.name}
                   onChange={(e) => setForm({ ...form, name: e.target.value })}
                   placeholder="Как к вам обращаться"
-                  className="bg-muted/50 border-border h-12 rounded-xl"
+                  className="bg-white/5 border-white/10 h-12 rounded-xl placeholder:text-muted-foreground"
                 />
               </div>
               <div>
@@ -356,7 +356,7 @@ export default function Index() {
                   value={form.phone}
                   onChange={(e) => setForm({ ...form, phone: e.target.value })}
                   placeholder="+7 (___) ___-__-__"
-                  className="bg-muted/50 border-border h-12 rounded-xl"
+                  className="bg-white/5 border-white/10 h-12 rounded-xl placeholder:text-muted-foreground"
                 />
               </div>
               <div>
@@ -365,7 +365,7 @@ export default function Index() {
                   value={form.type}
                   onChange={(e) => setForm({ ...form, type: e.target.value })}
                   placeholder="Авто, квартира, здоровье…"
-                  className="bg-muted/50 border-border h-12 rounded-xl"
+                  className="bg-white/5 border-white/10 h-12 rounded-xl placeholder:text-muted-foreground"
                 />
               </div>
               <div>
@@ -374,7 +374,7 @@ export default function Index() {
                   value={form.comment}
                   onChange={(e) => setForm({ ...form, comment: e.target.value })}
                   placeholder="Опишите вашу задачу"
-                  className="bg-muted/50 border-border rounded-xl min-h-24"
+                  className="bg-white/5 border-white/10 rounded-xl min-h-24 placeholder:text-muted-foreground"
                 />
               </div>
               <Button
@@ -421,7 +421,7 @@ export default function Index() {
       </section>
 
       {/* CONTACTS / FOOTER */}
-      <footer id="contacts" className="relative border-t border-border bg-primary/[0.03] pt-20 pb-10">
+      <footer id="contacts" className="relative border-t border-border bg-black/30 pt-20 pb-10">
         <div className="container">
           <div className="grid md:grid-cols-4 gap-10 mb-14">
             <div>
